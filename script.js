@@ -33,7 +33,7 @@ function apiSearch(event){
     })
     .catch(function(reason){
         movie.innerHTML = 'Упс, что-то пошло не так';
-        console.log('error: '+ request.status);
+        console.log('error: '+ reason.status);
     });
 }
 
